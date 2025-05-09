@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 21st Birthday Lavanyaa!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lavanya.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy 21st Birthday, Lavanyaa! 💖🎉</h1>
+        <h2>Wishing you a year full of love, laughter, and endless possibilities!</h2>
+        <img src="media/WhatsApp Image 2025-05-09 at 6.53.16 AM.jpeg" class="girl" alt="Girl">
+        <button onclick="alert( 'Surprise emm ledhuu kanii... te quiero. .. 💖𝕮𝖍𝖎𝖈𝖆💖')">Click for a Surprise</button>
+    </div>
+    <div class="hearts" id="hearts"></div>
+    <script>
+        const hearts = document.getElementById('hearts');
+        function launchHearts() {
+            for (let i = 0; i < 20; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.textContent = '❤️';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDelay = Math.random() * 5 + 's';
+                heart.style.fontSize = Math.random() * 30 + 20 + 'px';
+                hearts.appendChild(heart);
+                setTimeout(() => heart.remove(), 5000);
+            }
+        }
+        setInterval(launchHearts, 1500);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
